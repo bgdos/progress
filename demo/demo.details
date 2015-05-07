@@ -1,4 +1,4 @@
-/*
+
 ---
  name: Multiple Progress bar
  description: Progress barr based on IVAN LAZAREVIC http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
@@ -6,10 +6,8 @@
    - IVAN LAZAREVIC
    - JUAN SALGADO
  resources:
-   - https://github.com/kopipejst/progressbar
-   - https://github.com/kopipejst/progressbar
+   - http://code.jquery.com/jquery-2.1.4.min.js
  normalize_css: no
  ...
 
-*/
 <p>This is my first attemp.</p> 
