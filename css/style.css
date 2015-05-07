@@ -11,6 +11,25 @@ table tr:nth-child(odd) {
    background-color:#fff;
 }
 /* progress bar */
+#progress {
+    width: 300px;
+    height: 22px;
+    border: 1pt solid #111;
+    border-radius: 4px;
+	background: #404040;
+	border: 1px solid #AAA;
+	overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+}
+#progress div {
+    height: 300px;
+    color: #404040;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+	border-right: 1px solid #113655;
+    /*background-image: url(pbar-ani.gif);*/
+}
 .progress{
   background-image:
 	   -webkit-linear-gradient(-45deg, 
@@ -20,7 +39,6 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .20), 
 	                           rgba(0, 0, 0, .20)),
 	   -webkit-linear-gradient(left, #216c9b, #216c9b);
-    background-image: url('https://cloud.githubusercontent.com/assets/12112938/7526176/5e3b98d8-f4c4-11e4-98bd-e6644d83e455.gif')
 }
 .progress-min{
   background-image:
@@ -31,7 +49,6 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #d43535,  #cc0606);
-    background-image: url('https://cloud.githubusercontent.com/assets/12112938/7526169/5df38dc2-f4c4-11e4-8385-f1b816c7cbfb.gif')
 }
 .progress-mid{
   background-image:
@@ -42,7 +59,6 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #d69426,  #ea8209);
-    background-image: url('https://cloud.githubusercontent.com/assets/12112938/7526174/5e2fe808-f4c4-11e4-833c-75579a7bf38e.gif')
 }
 .progress-average{
   background-image:
@@ -53,26 +69,6 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #41e50f,  #00cb08);
-    background-image: url('https://cloud.githubusercontent.com/assets/12112938/7526172/5e086bfc-f4c4-11e4-9a71-e231a8a77055.gif')
-}
-#progress {
-    width: 100%;
-    height: 22px;
-    border: 1pt solid #111;
-    border-radius: 4px;
-	background: #404040;
-	border: 1px solid #AAA;
-	overflow: hidden;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
-}
-#progress div {
-    height: 100%;
-    color: #404040;
-    text-align: right;
-    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
-    width: 0;
-	border-right: 1px solid #113655;
-    /*background-image: url(pbar-ani.gif);*/
 }
 /* ie9*/
 .progress-bar {
