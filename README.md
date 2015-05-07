@@ -26,10 +26,6 @@ http://bgdos.github.io/progress/demo-2.html
         <th>Progress</th>
         </tr>
       </thead>
-      <!--[if lte IE 9]>
-      </table>
-      <div class="old_ie_wrapper">
-        <table style=border-top:none;margin-top:0px;  class="prod-status"><!-- -->
       <tbody>
         <tr>
           <td><div id="progress"><div></div></div>
