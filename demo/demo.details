@@ -1,0 +1,15 @@
+Everything before the line containing only '---' will not be parsed
+
+---
+ name: Multiple Progress bar
+ description: Progress barr based on IVAN LAZAREVIC http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
+ authors:
+   - IVAN LAZAREVIC
+   - JUAN SALGADO
+ resources:
+   - https://github.com/kopipejst/progressbar
+   - https://github.com/kopipejst/progressbar
+ normalize_css: no
+ ...
+
+Everything after the line containing only '...' will not be parsed
