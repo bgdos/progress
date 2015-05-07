@@ -7,7 +7,7 @@ First option <b>HTML5 + CSS3</b></br>
 http://bgdos.github.io/progress</br>
 </code></br>
 <img src='https://cloud.githubusercontent.com/assets/12112938/7527873/661f3418-f4d5-11e4-9dff-33861fac5d88.JPG'></br>
-Second option works on <b>IE animated</b>
+Second option works on <b>IE animated</b></br>
 <code></br>
 http://bgdos.github.io/progress/demo-2.html </br>
 </code>
