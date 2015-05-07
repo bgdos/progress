@@ -6,7 +6,7 @@ First option <b>HTML5 + CSS3</b></br>
 http://bgdos.github.io/progress </br>
 Second option works on <b>IE animated</b></br>
 http://bgdos.github.io/progress/demo-2.html 
-<div>
+<code>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -63,4 +63,4 @@ http://bgdos.github.io/progress/demo-2.html
     </table>
 </body>
 </html>
-</div>
+</code>
