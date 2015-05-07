@@ -3,7 +3,8 @@ Multiple progress bar, based on http://workshop.rs/2012/12/animated-progress-bar
 
 Live at </br>
 First option <b>HTML5 + CSS3</b></br>
-http://bgdos.github.io/progress </br>
+<code>
+http://bgdos.github.io/progress </code></br>
 Second option works on <b>IE animated</b></br>
 http://bgdos.github.io/progress/demo-2.html 
 <code>
