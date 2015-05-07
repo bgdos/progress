@@ -7,56 +7,5 @@ http://bgdos.github.io/progress </br>
 Second option works on <b>IE animated</b></br>
 http://bgdos.github.io/progress/demo-2.html 
 <code>
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Multiple Progress Bars</title>
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <link href="http://bgdos.github.io/progress/css/style.css" rel="stylesheet">
-    <script src="http://bgdos.github.io/progress/js/jquery.min.js"></script>
-    <script src="http://bgdos.github.io/progress/js/progress.js"></script>
-    <script src="http://bgdos.github.io/progress/js/funciones.js"></script>
-</head>
-    <body onload="progress()">
-    <table  class="prod-status" onload="progress()">
-      <thead>
-        <tr>
-        <th>Progress</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-        <tr>
-          <td><div id="progress"><div></div></div>
-          </td>
-        </tr>
-     </tbody>
-    </table>
-</body>
-</html>
+http://bgdos.github.io/progress/demo-2.html 
 </code>
