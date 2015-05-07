@@ -39,6 +39,7 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .20), 
 	                           rgba(0, 0, 0, .20)),
 	   -webkit-linear-gradient(left, #216c9b, #216c9b);
+	   background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526176/5e3b98d8-f4c4-11e4-98bd-e6644d83e455.gif)
 }
 .progress-min{
   background-image:
@@ -49,6 +50,7 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #d43535,  #cc0606);
+	   background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526169/5df38dc2-f4c4-11e4-8385-f1b816c7cbfb.gif)
 }
 .progress-mid{
   background-image:
@@ -59,6 +61,7 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #d69426,  #ea8209);
+	   background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526174/5e2fe808-f4c4-11e4-833c-75579a7bf38e.gif)
 }
 .progress-average{
   background-image:
@@ -69,6 +72,7 @@ table tr:nth-child(odd) {
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
 	   -webkit-linear-gradient(left, #41e50f,  #00cb08);
+	   background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526172/5e086bfc-f4c4-11e4-9a71-e231a8a77055.gif)
 }
 /* ie9*/
 .progress-bar {
