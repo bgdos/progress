@@ -27,7 +27,7 @@ table tr:nth-child(odd) {
 }
 #progress {
     width: 300px;
-    height: 30px;
+    height: 25px;
     border: 1pt solid #111;
     border-radius: 4px;
 	background: #404040;
@@ -39,7 +39,7 @@ table tr:nth-child(odd) {
     height: 300px;
     color: #404040;
     text-align: right;
-    line-height: 30px; /* same as #progressBar height if we want text middle aligned */
+    line-height: 25px; /* same as #progressBar height if we want text middle aligned */
     width: 0;
 	border-right: 1px solid #272727;
     /*background-image: url(pbar-ani.gif);*/
