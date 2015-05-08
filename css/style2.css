@@ -30,9 +30,9 @@ table tr:nth-child(odd) {
     height: 30px;
     border: 1pt solid #111;
     border-radius: 4px;
-	background: #404040;
-	border: 1px solid #272727;
-	overflow: hidden;
+    background: #404040;
+    border: 1px solid #272727;
+    overflow: hidden;
     box-shadow: rgb(96, 96, 96) 0 0px 20px -1px;
 }
 #progress div {
@@ -41,5 +41,5 @@ table tr:nth-child(odd) {
     text-align: right;
     line-height: 30px; /* same as #progressBar height if we want text middle aligned */
     width: 0;
-	border-right: 1px solid #272727;
+    border-right: 1px solid #272727;
 }
