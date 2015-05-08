@@ -12,6 +12,7 @@ table tr:nth-child(odd) {
 }
 /* progress bar */
 .progress{
+    background-size: 30px 30px;
     background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526176/5e3b98d8-f4c4-11e4-98bd-e6644d83e455.gif)
 }
 .progress-min{
@@ -23,7 +24,6 @@ table tr:nth-child(odd) {
 }
 .progress-average{
     background-image: url(https://cloud.githubusercontent.com/assets/12112938/7526172/5e086bfc-f4c4-11e4-9a71-e231a8a77055.gif)
-}
 }
 #progress {
     width: 300px;
