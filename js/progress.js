@@ -10,8 +10,8 @@
  * @param  {Number} percent
  * @param  {Number} $element progressBar DOM element
  */
-function progressBar(percent, element) {
-    var progress =  element.find('div');
+function progressBar(percent, $element) {
+    var progress =  $element.find('div');
     if (percent <= 25)
         progress.addClass('progress-min');
     else if (percent <= 50 & percent > 25)
