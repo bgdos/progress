@@ -2,7 +2,7 @@
 Multiple progress bar, based on http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/
 
 Live demo and instructions </br>
-<code>http://bgdos.github.io/progress</br></code>
+<code>http://bgdos.github.io/progress/code></br><
 First option <b>HTML5 + CSS3</b></br>
 <code>http://bgdos.github.io/progress/demo-1.html </br>
 </code></br></br>
