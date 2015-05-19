@@ -22,7 +22,7 @@ iframe{ height: 400px;}
 .green {color: green;}
 .blue {color: darkblue;}
 /* footer */
-.footer {background: #1f5667; height: 200px; text-align: center;padding: 10px;}
+.footer {background: #1f5667; height: 250px; text-align: center;padding: 10px;}
 .footer img{ width: 15%; margin-left: 45%;}
 .footer a img{ width: 5%; margin-left: 47.5%;}
 
