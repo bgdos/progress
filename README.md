@@ -6,8 +6,8 @@ Live demo and instructions </br>
 First option <b>HTML5 + CSS3</b></br>
 <code>http://bgdos.github.io/progress/demo-1.html </br>
 </code></br></br>
-<iframe style="width: 300px; height: 200px" src="http://bgdos.github.io/progress/demo-2.html">
-</iframe>
+<code><iframe style="width: 300px; height: 200px" src="http://bgdos.github.io/progress/demo-2.html">
+</iframe></code>
 <img src='https://cloud.githubusercontent.com/assets/12112938/7528928/3ebc03be-f4e5-11e4-971d-e1bcb878e121.JPG'></br></br>
 Second option works on <b>IE animated</b></br>
 <code></br>
