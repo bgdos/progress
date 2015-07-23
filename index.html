@@ -1,65 +1,227 @@
-<!DOCTYPE html/>		
-<html>		
-    <head>		
-        <meta name="viewport" content="width=device-width, initial-scale=1" />		
-        <meta charset="UTF-8" />		
-        <link href="css/style-index.css" rel="stylesheet">		
-        <script src="js/jquery.min.js"></script>		
-    </head>		
-    <body>		
-        <header>		
-            <div class="menu">		
-                <img src="https://cdn4.iconfinder.com/data/icons/basic-ui-elements/700/06_menu_grid-512.png">		
-            </div>		
-            <a href="#start"><img src="https://cloud.githubusercontent.com/assets/12112938/7551031/89e76eca-f62d-11e4-8647-b1af52d694eb.png"></a>		
-        </header>		
-        <container>		
-            <div><a name="start"></a> 		
-                <article>		
-                    <img src="https://cloud.githubusercontent.com/assets/12112938/7548260/ecf016a6-f5b6-11e4-8412-0f41b1d6d0d6.png" style="width:100%">		
-                    <h1>Welcome to my page!</h1>		
-                    <p>I want to help other people with my creations or improvements, I just started so I have a lot to learn.</p>		
-                </article>		
-            </div>		
-            <div>		
-                		
-                <article><h2>Multiple Progress bars<span class="date">05/08/2015</span></h2>		
-                    <p>1.- What we have here is a modified version of IVAN LAZAREVIC, you can access the original source <a href="http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/">here. </a> I just take the first part (html structure and css for the div) and modified the JS part.</p>		
-                    <iframe src="http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/"></iframe>		
-                    <p>2.- Now let's get started, first of all the HTML, I just made a table to add multiple progress bars...</p>		
-                    <iframe src="http://www.codeshare.io/as7J9"></iframe>		
-                    <p>3.- Now the css, I made 4 styles to change the progress bar color accoding to its value:		
-                        <ol>		
-                            <li>0 to 25. <span class="red">Red color</span></li>		
-                            <li>26 to 50. <span class="orange">Organge color</span></li>		
-                            <li>51 to 75. <span class="green">Green color</span></li>		
-                            <li>75 to 100. <span class="blue">Blue color</span></li>		
-                        </ol>		
-                    </p>		
-                    <iframe src="http://www.codeshare.io/jBKK9"></iframe>		
-                    <p>4.- Adding some animation...</p>		
-                    <iframe src="http://www.codeshare.io/jlVE9"></iframe>		
-                    <p>5.- Lets work on the JS part.		
-                        <ol>		
-                            <li>Lets made an array with the values.</li>		
-                            <li>We need a cicle to get all the div's with the id 'progress' and a div child</li>		
-                            <li>Optionally, We can add a class to the div, so we can change the value later.</li>		
-                            <li>Finally we made the call of the progress function sending the value and a parent div</li>		
-                        </ol>		
-                    </p>		
-                    <iframe class="js" src="http://www.codeshare.io/wsnBs"></iframe>		
-                    <p>5.- The progress JS, I modified the original JS to add some criteria so we can add the desire color for the value of our progress bar according to the step # 3</p>		
-                    <iframe src="http://www.codeshare.io/iaNz0"></iframe>		
-                    <p>6.- The final result...</p>		
-                    <iframe class="demo" src="http://bgdos.github.io/progress/demo-1.html"></iframe>		
-                    <p>7.- With an image instead of the bg color</p>		
-                    <iframe class="demo2" src="http://bgdos.github.io/progress/demo-2.html"></iframe>		
-                </article>		
-            </div>		
+<!DOCTYPE html/>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu"><img src="https://cdn4.iconfinder.com/data/icons/basic-ui-elements/700/06_menu_grid-512.png" ></div><a href="#start"><img src="https://cloud.githubusercontent.com/assets/12112938/7551031/89e76eca-f62d-11e4-8647-b1af52d694eb.png"></a>
+        </header><a name="start"></a> 
+        <container>
+            <div>  
+                <article><img src="https://cloud.githubusercontent.com/assets/12112938/7548260/ecf016a6-f5b6-11e4-8412-0f41b1d6d0d6.png" style="width:100%">
+                    <h1>Welcome to my page!</h1>
+                    <p>I want to help other people with my creations or improvements, I just started so I have a lot to learn.</p>
+                    
+                </article>
+            </div>
+            <div>
+                
+                <article><h2>Multiple Progress bars<span class="date">05/08/2015</span></h2>
+                    <p>1.- What we have here is a modified version of IVAN LAZAREVIC, you can access the original source <a href="http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/">here. </a> I just take the first part (html structure and css for the div) and modified the JS part.</p>
+                    <iframe src="http://workshop.rs/2012/12/animated-progress-bar-in-4-lines-of-jquery/"></iframe>
+                    <p>2.- Now let's get started, first of all the HTML, I just made a table to add multiple progress bars...</p>
+                    <pre class="prettyprint lang-html linenums">
+&lt;table  class="prod-status" onload="progress()
+  &lt;thead&gt;
+    &lt;tr&gt;
+    &lt;th&gt;Progress&lt;th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;div id="progress"&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+                    </pre>
+                    <p>3.- Now the css, I made 4 styles to change the progress bar color accoding to its value:
+                        <ol>
+                            <li>0 to 25. <span class="red">Red color</span></li>
+                            <li>26 to 50. <span class="orange">Organge color</span></li>
+                            <li>51 to 75. <span class="green">Green color</span></li>
+                            <li>75 to 100. <span class="blue">Blue color</span></li>
+                        </ol>
+                    </p>
+                    <pre class="prettyprint lang-css linenums">
+/* progress bar */
+.progress{
+    -webkit-animation: progress 1s linear infinite;
+    -moz-animation: progress 1s linear infinite;
+    animation: progress 1s linear infinite;
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, 
+    transparent 50%, rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, 
+    transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, 
+    transparent);
+    background-color: CornflowerBlue;
+    box-shadow:inset 0px 0px 6px 2px rgba(255,255,255,.3);
+    /*background-image: url(pbar-ani-m.gif)*/
+}
+.progress-min{
+    -webkit-animation: progress 1s linear infinite;
+    -moz-animation: progress 1s linear infinite;
+    animation: progress 1s linear infinite;
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%, 
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, 
+    transparent 50%, rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, transparent);
+    background-color: #d43535;
+    box-shadow:inset 0px 0px 6px 2px rgba(255,255,255,.3);
+    /*background-image: url(pbar-ani-orange.gif)*/
+}
+
+.progress-mid{
+    -webkit-animation: progress 1s linear infinite;
+    -moz-animation: progress 1s linear infinite;
+    animation: progress 1s linear infinite;
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%, 
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, transparent 75%, 
+    transparent);
+    background-image: linear-gradient(-45deg, 
+    rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%, 
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, transparent);
+    background-color: #ea8209;
+    box-shadow:inset 0px 0px 6px 2px rgba(255,255,255,.3);
+    /*background-image: url(pbar-ani.gif)*/
+}
+.progress-average{
+    -webkit-animation: progress 1s linear infinite;
+    -moz-animation: progress 1s linear infinite;
+    animation: progress 1s linear infinite;
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, 
+    transparent 25%, transparent 50%, 
+    rgba(255, 255, 255, 0.15) 50%, 
+    rgba(255, 255, 255, 0.15) 75%, 
+    transparent 75%, 
+    transparent);
+    background-color: #00cb08;
+    box-shadow:inset 0px 0px 6px 2px rgba(255,255,255,.3);
+    /*background-image: url(pbar-ani-green.gif)*/
+}
+                    </pre>
+                    <p>4.- Adding some animation...</p>
+                    <pre class="prettyprint lang-css linenums">
+@-webkit-keyframes progress
+{
+to {background-position: 30px 0;}
+}
+@-moz-keyframes progress
+{
+to {background-position: 30px 0;}
+}
+
+@keyframes progress
+{
+to {background-position: 30px 0;}
+}
+                    </pre>
+                    <p>5.- Lets work on the JS part.
+                        <ol>
+                            <li>Lets made an array with the values.</li>
+                            <li>We need a cicle to get all the div's with the id 'progress' and a div child</li>
+                            <li>Optionally, We can add a class to the div, so we can change the value later.</li>
+                            <li>Finally we made the call of the progress function sending the value and a parent div</li>
+                        </ol>
+                    </p>
+                    <pre class="prettyprint lang-js linenums">
+function progress()
+{
+    var values = [25, 50, 75, 90, 68, 45, 22];
+    var i = 0;
+    $('#progress:first-child').each(function() { 
+		$(this).find('div').addClass ="v"+i;
+        progressBar(values[i], $(this));
+        i++;
+    });
+}
+                    </pre>
+                    <p>5.- The progress JS, I modified the original JS to add some criteria so we can add the desire color for the value of our progress bar according to the step # 3</p>
+                    <pre class="prettyprint lang-js linenums">
+function progressBar(percent, element) {
+    var progress =  element.find('div');
+    if (percent &lt;= 25)
+        progress.addClass('progress-min');
+    else if (percent &lt;= 50 & percent > 25)
+        progress.addClass('progress-mid');
+    else if (percent &lt;= 75 & percent > 50)
+        progress.addClass('progress-average');
+    else if(percent > 75)
+        progress.addClass('progress');
+	progress.animate({ width: percent + '%' }, 500).html(percent + "%&nbsp;"); /* Change the % to & nbsp; w/o space*/
+}
+                    </pre>
+                    <p>6.- The final result...</p>
+                    <iframe class="demo" src="http://bgdos.github.io/progress/demo-1.html"></iframe>
+                    <p>7.- With an image instead of the bg color</p>
+                    <iframe class="demo2" src="http://bgdos.github.io/progress/demo-2.html"></iframe>
+                </article>
+            </div>
             <div id="disqus_thread"></div>
             <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = 'juansalgadodev';
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'juansalgadodev';
+
                 /* * * DON'T EDIT BELOW THIS LINE * * */
                 (function() {
                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -69,10 +231,9 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </container>
-        <div class="footer">		
-            <img src="https://cloud.githubusercontent.com/assets/12112938/7551031/89e76eca-f62d-11e4-8647-b1af52d694eb.png" style="margin-left:41%">
-            <h3>On Github: </h3>		
-            <a href="https://github.com/bgdos/progress"><img src="http://www.saadmir.com/github.png"></a>		
-        </div>
-    </body>		
+        <div class="footer">
+                <img src="https://cloud.githubusercontent.com/assets/12112938/7551031/89e76eca-f62d-11e4-8647-b1af52d694eb.png" style="margin-left:41%"><h3>On Github: </h3>
+                <a href="https://github.com/bgdos/progress"><img src="http://www.saadmir.com/github.png"></a>
+            </div>
+    </body>
 </html>
