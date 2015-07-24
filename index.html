@@ -4,8 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <link href="css/style-index.css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
         <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
         <script src="js/jquery.min.js"></script>
+        <script src="js/funciones.js"></script>
     </head>
     <body>
         <header>
@@ -230,10 +232,33 @@ function progressBar(percent, element) {
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            <sidebar>
+                <a onclick="openMenu()">X</a>
+                <ul>
+                    <li><a href="http://jssoftware.esy.es">JS Software</a></li>
+                    <li><a>Professional Projects</a></li>
+                    <li><a>Software</a></li>
+                    <li class="active"><a>Progress Bars</a></li>
+                    <li><a>Contact</a></li>
+                    <li class="last"><a>About</a></li>
+                </ul>
+            </sidebar>
         </container>
         <div class="footer">
                 <img src="https://cloud.githubusercontent.com/assets/12112938/7551031/89e76eca-f62d-11e4-8647-b1af52d694eb.png" style="margin-left:41%"><h3>On Github: </h3>
                 <a href="https://github.com/bgdos/progress"><img src="http://www.saadmir.com/github.png"></a>
             </div>
     </body>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'juansalgadodev';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </html>
