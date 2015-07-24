@@ -8,3 +8,7 @@ function progress()
         i++;
     });
 }
+function openMenu()
+{
+    $("sidebar").toggle(500);   
+}
